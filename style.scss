@@ -1,6 +1,7 @@
 @import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   margin: 0;
@@ -109,5 +110,91 @@ main {
   }
 
   .dvgOne {
+    display: flex;
+    margin: 3rem 0;
+    gap: 2rem;
+
+    .dvgOneImage {
+      flex: 1;
+      .dvgOneImg {
+        max-width: none;
+      }
+    }
+
+    .dvgOneRight {
+      flex: 1;
+      margin-right: 10rem;
+
+      .dvgOneUp {
+        .dvgOneTitle {
+          margin: 2rem 0 1rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 34px;
+          color: $main-title-color;
+        }
+
+        .line {
+          height: 6px;
+          width: 10vw;
+          background-color: $main-line-color;
+          margin-bottom: 1rem;
+        }
+
+        .dvgOneSubTitle {
+          margin-bottom: 2rem;
+
+          h3 {
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $main-text-color;
+          }
+        }
+
+        hr {
+          border: 1px solid;
+          color: rgba(196, 196, 196, 0.4);
+        }
+      }
+
+      .dvgOneDown {
+        margin-top: 2rem;
+        font-family: "Roboto", sans-serif;
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 160%;
+          color: $main-text-color;
+        }
+
+        .aboutUsBtn {
+          margin-top: 5rem;
+          display: inline-block;
+          padding: 14px 16px;
+          background-color: $main-line-color;
+          border: 0;
+          border: 2px solid $main-line-color;
+          color: $white-color;
+          text-align: center;
+          font-weight: 500;
+          width: auto;
+          border-radius: 4px;
+          font-size: 16px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
